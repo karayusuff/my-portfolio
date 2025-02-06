@@ -118,5 +118,9 @@
 .project-links a {
   margin-right: 25px;
   text-decoration: none;
-  color: #0077B6;
+  color: #4A7B9D;
+}
+
+.project-links a:hover {
+  color: #2274A5;
 }

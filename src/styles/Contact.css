@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.contact-text {
+  font-weight: lighter;
+}
+
 .contact-text-box {
   width: 45%;
   text-align: right;
@@ -28,9 +32,13 @@
 }
 
 .contact-list a {
-  color: #0077B6;
-  font-weight: bold;
+  color: #4A7B9D;
+  font-weight: lighter;
   text-decoration: none;
+}
+
+.contact-list a:hover {
+  color: #2274A5;
 }
 
 .contact-icons {
@@ -43,11 +51,11 @@
 
 .icon {
   font-size: 1.8rem;
-  color: #0077B6;
+  color: #4A7B9D;
   transition: transform 0.3s ease-in-out;
 }
 
 .icon:hover {
   transform: scale(1.1);
-  color: #005a8d;
+  color: #2274A5;
 }

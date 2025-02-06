@@ -9,12 +9,12 @@ const projects = [
     github: "https://github.com/karayusuff/Screenshare",
     live: "https://screenshare-24ps.onrender.com/",
     images: [
-      "/screenshare-landing-page.png",
-      "/screenshare-movies-page.png",
-      "/screenshare-users-page.png",
-      "/public/screenshare-movie-page-1.png",
-      "/public/screenshare-movie-page-2.png",
-      "/public/screenshare-user-page.png"
+      "/my-portfolio/screenshare-landing-page.png",
+      "/my-portfolio/screenshare-movies-page.png",
+      "/my-portfolio/screenshare-users-page.png",
+      "/my-portfolio/screenshare-movie-page-1.png",
+      "/my-portfolio/screenshare-movie-page-2.png",
+      "/my-portfolio/screenshare-user-page.png"
     ]
   },
   {
@@ -24,9 +24,9 @@ const projects = [
     github: "https://github.com/karayusuff/Homebnb",
     live: "https://homebnb-tupx.onrender.com/",
     images: [
-      "/homebnb-landing-page.png",
-      "/homebnb-listing-page-1.png",
-      "/homebnb-listing-page-2.png"
+      "/my-portfolio/homebnb-landing-page.png",
+      "/my-portfolio/homebnb-listing-page-1.png",
+      "/my-portfolio/homebnb-listing-page-2.png"
     ]
   },
   {
@@ -36,9 +36,9 @@ const projects = [
     github: "https://github.com/karayusuff/Flux",
     live: "https://flux-1ty5.onrender.com/",
     images: [
-      "/flux-landing-page.png",
-      "/flux-follows-page.png",
-      "/flux-likes-page.png"
+      "/my-portfolio/flux-landing-page.png",
+      "/my-portfolio/flux-follows-page.png",
+      "/my-portfolio/flux-likes-page.png"
     ]
   }
 ];
