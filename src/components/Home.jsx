@@ -14,7 +14,7 @@ function Home() {
           <div className="social-links">
             <a href="https://github.com/karayusuff" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/karayusuff" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://drive.google.com/file/d/1foxJTvj063rBOapuKIqlaacewbRKugug/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="https://drive.google.com/file/d/1tvt6JY0uuGgdYuAT7AcAw7loTS3OG3hD/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
