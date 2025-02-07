@@ -9,12 +9,12 @@ const projects = [
     github: "https://github.com/karayusuff/Screenshare",
     live: "https://screenshare-24ps.onrender.com/",
     images: [
-      { src: "/my-portfolio/screenshare-landing-page.png", name: "Landing Page" },
-      { src: "/my-portfolio/screenshare-movies-page.png", name: "Movies Page" },
-      { src: "/my-portfolio/screenshare-users-page.png", name: "Users Page" },
-      { src: "/my-portfolio/screenshare-movie-page-1.png", name: "Movie Details 1" },
-      { src: "/my-portfolio/screenshare-movie-page-2.png", name: "Movie Details 2" },
-      { src: "/my-portfolio/screenshare-user-page.png", name: "User Profile" }
+      { src: "/screenshare-landing-page.png", name: "Landing Page" },
+      { src: "/screenshare-movies-page.png", name: "Movies Page" },
+      { src: "/screenshare-users-page.png", name: "Users Page" },
+      { src: "/screenshare-movie-page-1.png", name: "Movie Details 1" },
+      { src: "/screenshare-movie-page-2.png", name: "Movie Details 2" },
+      { src: "/screenshare-user-page.png", name: "User Profile" }
     ]
   },
   {
@@ -24,9 +24,9 @@ const projects = [
     github: "https://github.com/karayusuff/Homebnb",
     live: "https://homebnb-tupx.onrender.com/",
     images: [
-      { src: "/my-portfolio/homebnb-landing-page.png", name: "Landing Page" },
-      { src: "/my-portfolio/homebnb-listing-page-1.png", name: "Listing Page 1" },
-      { src: "/my-portfolio/homebnb-listing-page-2.png", name: "Listing Page 2" }
+      { src: "/homebnb-landing-page.png", name: "Landing Page" },
+      { src: "/homebnb-listing-page-1.png", name: "Listing Page 1" },
+      { src: "/homebnb-listing-page-2.png", name: "Listing Page 2" }
     ]
   },
   {
@@ -36,9 +36,9 @@ const projects = [
     github: "https://github.com/karayusuff/Flux",
     live: "https://flux-1ty5.onrender.com/",
     images: [
-      { src: "/my-portfolio/flux-landing-page.png", name: "Landing Page" },
-      { src: "/my-portfolio/flux-follows-page.png", name: "Follows Page" },
-      { src: "/my-portfolio/flux-likes-page.png", name: "Likes Page" }
+      { src: "/flux-landing-page.png", name: "Landing Page" },
+      { src: "/flux-follows-page.png", name: "Follows Page" },
+      { src: "/flux-likes-page.png", name: "Likes Page" }
     ]
   }
 ];
