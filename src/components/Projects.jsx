@@ -9,12 +9,12 @@ const projects = [
     github: "https://github.com/karayusuff/Screenshare",
     live: "https://screenshare-24ps.onrender.com/",
     images: [
-      "/my-portfolio/screenshare-landing-page.png",
-      "/my-portfolio/screenshare-movies-page.png",
-      "/my-portfolio/screenshare-users-page.png",
-      "/my-portfolio/screenshare-movie-page-1.png",
-      "/my-portfolio/screenshare-movie-page-2.png",
-      "/my-portfolio/screenshare-user-page.png"
+      { src: "/my-portfolio/screenshare-landing-page.png", name: "Landing Page" },
+      { src: "/my-portfolio/screenshare-movies-page.png", name: "Movies Page" },
+      { src: "/my-portfolio/screenshare-users-page.png", name: "Users Page" },
+      { src: "/my-portfolio/screenshare-movie-page-1.png", name: "Movie Details 1" },
+      { src: "/my-portfolio/screenshare-movie-page-2.png", name: "Movie Details 2" },
+      { src: "/my-portfolio/screenshare-user-page.png", name: "User Profile" }
     ]
   },
   {
@@ -24,9 +24,9 @@ const projects = [
     github: "https://github.com/karayusuff/Homebnb",
     live: "https://homebnb-tupx.onrender.com/",
     images: [
-      "/my-portfolio/homebnb-landing-page.png",
-      "/my-portfolio/homebnb-listing-page-1.png",
-      "/my-portfolio/homebnb-listing-page-2.png"
+      { src: "/my-portfolio/homebnb-landing-page.png", name: "Landing Page" },
+      { src: "/my-portfolio/homebnb-listing-page-1.png", name: "Listing Page 1" },
+      { src: "/my-portfolio/homebnb-listing-page-2.png", name: "Listing Page 2" }
     ]
   },
   {
@@ -36,9 +36,9 @@ const projects = [
     github: "https://github.com/karayusuff/Flux",
     live: "https://flux-1ty5.onrender.com/",
     images: [
-      "/my-portfolio/flux-landing-page.png",
-      "/my-portfolio/flux-follows-page.png",
-      "/my-portfolio/flux-likes-page.png"
+      { src: "/my-portfolio/flux-landing-page.png", name: "Landing Page" },
+      { src: "/my-portfolio/flux-follows-page.png", name: "Follows Page" },
+      { src: "/my-portfolio/flux-likes-page.png", name: "Likes Page" }
     ]
   }
 ];
@@ -70,21 +70,21 @@ function ProjectItem({ project, reverseLayout }) {
   return (
     <div className={`project-item ${reverseLayout ? "reverse" : ""}`}>
       <div className="project-image">
-        <img src={project.images[currentImageIndex]} alt={project.title} />
-          <button
-            onClick={handlePrev}
-            className={`nav-arrow left ${currentImageIndex === 0 ? "hidden" : ""}`}
-          >
-            &lt;
-          </button>
-          <button
-            onClick={handleNext}
-            className={`nav-arrow right ${currentImageIndex === project.images.length - 1 ? "hidden" : ""}`}
-          >
-            &gt;
-          </button>
+        <img src={project.images[currentImageIndex].src} alt={project.images[currentImageIndex].name} />
+        <button
+          onClick={handlePrev}
+          className={`nav-arrow left ${currentImageIndex === 0 ? "hidden" : ""}`}
+        >
+          &lt;
+        </button>
+        <button
+          onClick={handleNext}
+          className={`nav-arrow right ${currentImageIndex === project.images.length - 1 ? "hidden" : ""}`}
+        >
+          &gt;
+        </button>
         <div className="image-overlay">
-          <div className="image-title">{`Image ${currentImageIndex + 1}`}</div>
+          <div className="image-title">{project.images[currentImageIndex].name}</div>
         </div>
       </div>
       <div className="project-details">
