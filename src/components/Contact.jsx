@@ -18,7 +18,7 @@ function Contact() {
               <a
                 href="mailto:karayusuf95@outlook.com"
               >
-                karayusuf95@outlook.com
+                contact@yusufkara.dev
               </a>
             </li>
             <li>
