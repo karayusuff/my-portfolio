@@ -1,11 +1,19 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { BsCodeSlash } from "react-icons/bs";
 import "../styles/Navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
+
+  const handleIconClick = () => {
+    window.scrollTo({ top: 0 });
+    navigate('/');
+  };
 
   useEffect(() => {
     if (darkMode) {
@@ -20,7 +28,7 @@ function Navbar() {
     <nav id="navbar">
       <div className="nav-container">
         <div className="nav-left">
-          <BsCodeSlash className="nav-logo" /> 
+          <BsCodeSlash className="nav-logo" onClick={handleIconClick} /> 
         </div>
         <div className="nav-center">
           <a href="#home">Home</a>
