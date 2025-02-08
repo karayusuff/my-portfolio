@@ -3,6 +3,7 @@
   --text-color: #1c1c1e;
   --link-color: #4a7b9d;
   --link-color-hover: #2274a5;
+  --text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dark-mode {
@@ -10,7 +11,10 @@
   --text-color: #faf9f8;
   --link-color: #7ab5e3;
   --link-color-hover: #b8daff;
+  --text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
 }
+
+
 
 @keyframes fadeIn {
   from { background: var(--bg-color); opacity: 0;}
@@ -31,6 +35,16 @@
   from { opacity: 0; transform: translateY(5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes glowEffect {
+  0% { text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); }
+  25% { text-shadow: 0 0 6px rgba(255, 255, 255, 0.6); }
+  50% { text-shadow: 0 0 12px rgba(255, 255, 255, 0.7); }
+  75% { text-shadow: 0 0 6px rgba(255, 255, 255, 0.6); }
+  100% { text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); }
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -60,11 +74,13 @@ section {
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
+  text-align: left;
 }
 
 h1, h2, h3 {
-  text-align: center;
+  /* text-align: center; */
   /* transition: color 0.1s ease; */
+  text-shadow: var(--text-shadow);
 }
 
 ul {

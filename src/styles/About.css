@@ -1,14 +1,9 @@
-.section-title {
-  text-align: left;
-}
-
 #about {
   padding-bottom: 0;
+  scroll-margin-top: 25vh;
 }
 
 .about-text {
   font-family: "Poppins", serif;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #3A3A3C;
+  font-weight: 200;
 }
