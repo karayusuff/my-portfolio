@@ -1,28 +1,32 @@
-import { useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BsCodeSlash } from "react-icons/bs";
+import { ThemeContext } from "../context/ThemeContext";
 import "../styles/Navbar.css";
 
 function Navbar() {
   const navigate = useNavigate();
-
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("darkMode") === "true"
-  );
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const [tooltip, setTooltip] = useState("");
+  const [hideTooltip, setHideTooltip] = useState(false);
 
   const handleIconClick = () => {
     window.scrollTo({ top: 0 });
     navigate('/');
   };
 
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
+  const toggleTheme = () => {
+    setHideTooltip(true);
+    setDarkMode(!darkMode);
+  };
+
+  const switchTooltip = () => {
+      setTooltip(darkMode ? "Switch to light mode" : "Switch to dark mode")
+  };
+
+  const onMouseLeave = () => {
+    setHideTooltip(false);
+  };
 
   return (
     <nav id="navbar">
@@ -38,8 +42,14 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </div>
         <div className="nav-right">
-          <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            onMouseEnter={switchTooltip}
+            onMouseLeave={onMouseLeave}
+          >
+            {darkMode ? "☀️" : "🌙"}
+            {!hideTooltip && tooltip && <span className="tooltip">{tooltip}</span>}
           </button>
         </div>
       </div>
