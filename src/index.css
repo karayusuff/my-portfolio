@@ -12,6 +12,26 @@
   --link-color-hover: #b8daff;
 }
 
+@keyframes fadeIn {
+  from { background: var(--bg-color); opacity: 0;}
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-5%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInName {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInTitle {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 html {
   scroll-behavior: smooth;
 
@@ -32,6 +52,8 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   cursor: default;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  animation: fadeIn 2s ease forwards;
 }
 
 section {
@@ -42,6 +64,7 @@ section {
 
 h1, h2, h3 {
   text-align: center;
+  /* transition: color 0.1s ease; */
 }
 
 ul {
@@ -52,7 +75,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--link-color);
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 a:hover {

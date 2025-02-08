@@ -41,6 +41,7 @@
 .nav-center a {
   position: relative;
   color: var(--text-color);
+  font-size: 1.3rem;
 }
 
 .nav-center a::after {
@@ -73,7 +74,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: var(--tooltip-text);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, color 1s ease-in-out;
