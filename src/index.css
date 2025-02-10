@@ -17,7 +17,7 @@
 
 
 @keyframes fadeIn {
-  from { background: var(--bg-color); opacity: 0;}
+  from { background: var(--bg-color); opacity: 0; }
   to { opacity: 1; }
 }
 
@@ -37,11 +37,12 @@
 }
 
 @keyframes glowEffect {
-  0% { text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); }
-  25% { text-shadow: 0 0 6px rgba(255, 255, 255, 0.6); }
-  50% { text-shadow: 0 0 12px rgba(255, 255, 255, 0.7); }
-  75% { text-shadow: 0 0 6px rgba(255, 255, 255, 0.6); }
-  100% { text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); }
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 
@@ -66,8 +67,9 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   cursor: default;
-  transition: background-color 0.5s ease, color 0.5s ease;
-  animation: fadeIn 2s ease forwards;
+  /* transition: background-color 0.5s ease, color 0.5s ease; */
+  transition: all 0.5s ease;
+  animation: fadeIn 3s ease forwards;
 }
 
 section {
@@ -77,11 +79,11 @@ section {
   text-align: left;
 }
 
-h1, h2, h3 {
-  /* text-align: center; */
-  /* transition: color 0.1s ease; */
+/* h1, h2, h3 {
+  text-align: center;
+  transition: color 0.1s ease;
   text-shadow: var(--text-shadow);
-}
+} */
 
 ul {
   list-style-type: none;

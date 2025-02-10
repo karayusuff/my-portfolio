@@ -88,7 +88,14 @@ function ProjectItem({ project, reverseLayout }) {
         </div>
       </div>
       <div className="project-details">
-        <h3 className="project-title">{project.title}</h3>
+        <div className="project-title-container">
+          <h3 
+            className="project-title" 
+            onClick={() => window.open(project.live, "_blank", "noopener,noreferrer")}
+          >
+            {project.title}
+          </h3>
+        </div>
         <p className="project-description">{project.description}</p>
         <div className="project-links">
           {project.github && (
