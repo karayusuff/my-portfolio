@@ -16,7 +16,7 @@ function Contact() {
           <ul className="contact-list">
             <li>
               <a
-                href="mailto:karayusuf95@outlook.com"
+                href="mailto:contact@yusufkara.dev"
               >
                 contact@yusufkara.dev
               </a>
@@ -44,7 +44,7 @@ function Contact() {
       </div>
       <div className="contact-icons">
         <a
-          href="mailto:karayusuf95@outlook.com"
+          href="mailto:contact@yusufkara.dev"
           className="icon"
         >
           <FaEnvelope />
