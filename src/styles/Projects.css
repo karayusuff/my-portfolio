@@ -1,13 +1,50 @@
 :root {
-  --project-bs: 20px 0px 50px -20px rgb(0, 0, 0, 0.1);
-  --project-bs-reverse: -20px 0px 50px -20px rgba(0, 0, 0, 0.15);
-  --project-title-glow: none;
+  /* --project-bs: 20px 0px 50px -20px rgb(0, 0, 0, 0.15); */
+  /* --project-bs: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px; */
+  /* --project-bs: rgba(0, 0, 0, 0.35) -10px 0px 36px -15px inset; */
+  --project-bs: 5px 0px rgba(0, 0, 0, 0.1);
+  
+
+  /* --project-bs-reverse: -20px 0px 50px -20px rgba(0, 0, 0, 0.15); */
+  /* --project-bs-reverse: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px; */
+  /* --project-bs-reverse: rgba(0, 0, 0, 0.35) 10px 0px 36px -15px inset; */
+  --project-bs-reverse: -5px 0px rgba(0, 0, 0, 0.1);
+  
+
+  /* --project-title-glow: glowEffect 3s ease-in-out infinite; */
+  --project-title-bg: linear-gradient(
+    90deg, 
+    rgb(0, 0, 0) 0%, 
+    rgba(0, 0, 0, 0.8) 25%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgb(0, 0, 0) 100%
+  );
+  --project-title-bg-still: black;
 }
 
 .dark-mode {
-  --project-bs: none;
-  --project-bs-reverse: none;
-  --project-title-glow: glowEffect 3s ease-in-out infinite;
+  /* --project-bs: 20px 0px 50px -20px rgba(255, 255, 255, 0.15); */
+  /* --project-bs: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.05) 25px 25px; */
+  /* --project-bs: rgba(255, 255, 255, 0.35) -10px 0px 36px -15px inset; */
+  /* --project-bs: 15px 0px 0px -10px rgba(255, 255, 255, 0.15); */
+  --project-bs: 5px 0px rgba(255, 255, 255, 0.1);
+
+  --project-bs-reverse: -20px 0px 50px -20px rgba(255, 255, 255, 0.15);
+  /* --project-bs-reverse: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px; */
+  /* --project-bs-reverse: rgba(255, 255, 255, 0.35) 10px 0px 36px -15px inset; */
+  --project-bs-reverse: -5px 0px rgba(255, 255, 255, 0.1);
+
+  /* --project-title-glow: glowEffect 3s ease-in-out infinite; */
+  --project-title-bg: linear-gradient(
+    90deg, 
+    white 0%, 
+    rgba(255, 255, 255, 0.8) 25%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.8) 75%,
+    white 100%
+  );
+  --project-title-bg-still: white;
 }
 
 #projects {
@@ -32,7 +69,8 @@
   width: 100%;
   padding: 20px;
   border-radius: 20px;
-  transition: box-shadow 0.3s ease-in-out;
+  /* transition: box-shadow 0.3s ease-in-out; */
+  transition: all 0.1s ease-in-out;
 }
 
 .project-item.reverse {
@@ -41,6 +79,7 @@
 
 .project-item:hover {
   box-shadow: var(--project-bs);
+  /* border: 1px solid rgb(154, 153, 153); */
 }
 
 .project-item.reverse:hover {
@@ -128,9 +167,18 @@
   margin-bottom: 10px;
   text-align: left;
   cursor: pointer;
+
+  background: var(--project-title-bg);
+  background-size: 200% 100%;
+  background-position: -100% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowEffect 6s infinite linear;
+  transition: all 0.3s ease-in-out;
 }  
 
-.project-title::after {
+/* .project-title::after {
   content: "🔗";
   font-size: 12px;
   margin-left: 5px;
@@ -145,9 +193,9 @@
 
 .dark-mode .project-title::after {
   content: none;
-}
+} */
 
-.dark-mode .project-title {
+/* .dark-mode .project-title {
   margin: 0;
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -168,11 +216,15 @@
   -webkit-text-fill-color: transparent;
   animation: glowEffect 6s infinite linear;
   transition: all 1s ease-in-out;
-}
+} */
 
-.dark-mode .project-item:hover .project-title {
+/* .dark-mode .project-item:hover .project-title {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
   background-color: white;
+} */
+
+.project-item:hover .project-title {
+  background-color: var(--project-title-bg-still);
 }
 
 .project-description {

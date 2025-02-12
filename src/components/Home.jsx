@@ -12,7 +12,7 @@ function Home() {
           <h1>Yusuf Kara</h1>
           <h2>Full Stack <br /> Software Engineer</h2>
           <div className="social-links">
-            <span className="link-icon">🔗</span>
+            {/* <span className="link-icon">🔗</span> */}
             <a href="https://github.com/karayusuff" target="_blank" rel="noopener noreferrer">Github</a>
             <a href="https://linkedin.com/in/karayusuff" target="_blank" rel="noopener noreferrer">Linkedin</a>
             <a href="https://drive.google.com/file/d/1tvt6JY0uuGgdYuAT7AcAw7loTS3OG3hD/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
