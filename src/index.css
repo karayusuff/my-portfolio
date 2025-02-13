@@ -14,10 +14,14 @@
   --text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
 
 
 @keyframes fadeIn {
-  from { background: var(--bg-color); opacity: 0; }
+  from { opacity: 0; }
   to { opacity: 1; }
 }
 
@@ -69,7 +73,7 @@ body {
   cursor: default;
   /* transition: background-color 0.5s ease, color 0.5s ease; */
   transition: all 0.5s ease;
-  animation: fadeIn 3s ease forwards;
+  /* animation: fadeIn 3s ease forwards; */
 }
 
 section {

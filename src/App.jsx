@@ -32,7 +32,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <>
+    <div className="fade-in">
       <Navbar />
       <Home />
       <About />
@@ -40,7 +40,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
