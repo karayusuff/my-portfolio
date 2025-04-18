@@ -15,7 +15,7 @@ function Home() {
             {/* <span className="link-icon">🔗</span> */}
             <a href="https://github.com/karayusuff" target="_blank" rel="noopener noreferrer">Github</a>
             <a href="https://linkedin.com/in/karayusuff" target="_blank" rel="noopener noreferrer">Linkedin</a>
-            <a href="https://drive.google.com/file/d/1Ez4TgDX-hn2re78_0APP9RqaxpLrfTg3/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="https://drive.google.com/file/d/1iNFwEKBsfbwcEo58y0Tm7hor-MWrc6Iv/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
